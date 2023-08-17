@@ -25,14 +25,15 @@
     box-sizing: border-box;
     font-family: "Outfit";
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--VerydarkbluecardBG)
-    
 }
-hr{
+
+hr {
     margin-top: 20px;
     color: var(--VerydarkbluecardBG)
 }
@@ -48,84 +49,138 @@ hr{
     padding: 50px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.image-wrapper img{
-   width: 290px;
-   height: auto;
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.second-wrapper{
+
+.image-wrapper img {
+    width: 290px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 255, 255, 0.416);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.overlay img {
+    width: 50px;
+   
+}
+.image-wrapper:hover .overlay {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.second-wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
-.ETH{
+
+.ETH {
     margin-top: 15px;
-    color: var(--Cyan) ;
+    color: var(--Cyan);
 }
-.eql{
+
+.ETH:hover   {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.eql {
     color: var(--Verydarkblueline);
     font-size: var(--Fontsizeparagraph);
 }
-.flex-wrapper{
+
+.flex-wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 1.4rem;
     font-size: 12px;
 }
-.first-flex{
+
+.first-flex {
     display: flex;
     column-gap: 8px;
     color: var(--Cyan);
-    
+
 }
-.first-flex img{
+
+.first-flex img {
     width: 13px;
     height: 20px;
 }
-.second-flex{
+
+.second-flex {
     display: flex;
     column-gap: 8px;
     color: var(--Verydarkblueline);
 }
-.second-flex img{
+
+.second-flex img {
     width: 18px;
     height: 18px;
 }
-.last-div{
+
+.last-div {
     display: flex;
     align-items: center;
     gap: 7px;
-    margin-top: 15px; 
+    margin-top: 15px;
 }
-.last-div img{
+
+.last-div img {
     width: 20px;
     height: 20px;
     border: 1px solid var(--Cyan);
     border-radius: 50%;
-  
+
 }
-.creation{
+
+.creation {
     color: var(--Verydarkblueline);
     font-size: 12px;
 }
-.name{
+
+.name {
     color: var(--Cyan);
     font-size: 13px;
 }
-@media screen and (max-width:375px){
-    .section{
+.name:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:375px) {
+    .section {
         margin-top: 7rem;
         margin-bottom: 5rem;
     }
-    .last-div{
+
+    .last-div {
         margin-top: 12px;
         margin-bottom: 10px;
     }
 }
-@media screen and (max-width:1440px){
-    .section{
+
+@media screen and (max-width:1440px) {
+    .section {
         margin-top: 2rem;
     }
-    .last-div{
+
+    .last-div {
         margin-top: 25px;
     }
 }
