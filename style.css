@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+/* ### Primary */
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+/* ### Neutral */
+:root {
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+:root {
+    --Fontsizeparagraph: 18px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VerydarkbluecardBG)
+    
+}
+hr{
+    margin-top: 20px;
+    color: var(--VerydarkbluecardBG)
+}
+
+.section {
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VerydarkbluecardBG);
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.image-wrapper img{
+   width: 290px;
+   height: auto;
+}
+.second-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.ETH{
+    margin-top: 15px;
+    color: var(--Cyan) ;
+}
+.eql{
+    color: var(--Verydarkblueline);
+    font-size: var(--Fontsizeparagraph);
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    font-size: 12px;
+}
+.first-flex{
+    display: flex;
+    column-gap: 8px;
+    color: var(--Cyan);
+    
+}
+.first-flex img{
+    width: 13px;
+    height: 20px;
+}
+.second-flex{
+    display: flex;
+    column-gap: 8px;
+    color: var(--Verydarkblueline);
+}
+.second-flex img{
+    width: 18px;
+    height: 18px;
+}
+.last-div{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 15px; 
+}
+.last-div img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--Cyan);
+    border-radius: 50%;
+  
+}
+.creation{
+    color: var(--Verydarkblueline);
+    font-size: 12px;
+}
+.name{
+    color: var(--Cyan);
+    font-size: 13px;
+}
+@media screen and (max-width:375px){
+    .section{
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+    .last-div{
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:1440px){
+    .section{
+        margin-top: 2rem;
+    }
+    .last-div{
+        margin-top: 25px;
+    }
+}
